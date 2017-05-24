@@ -1,0 +1,11 @@
+
+[0m[0m
+[0m  Conversor do código de cores[0m
+[0m    Conversão RGB para Hexa[0m
+    [32m  √[0m[90m converte as cores básicas[0m
+[0m    Conversão Hexa para RGB[0m
+    [32m  √[0m[90m converte as cores básicas[0m
+
+
+[92m [0m[32m 2 passing[0m[90m (13ms)[0m
+

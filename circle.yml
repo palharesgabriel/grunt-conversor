@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 6.10.3
+test:
+  pre:
+    - grunt jshint
+  override:
+    - grunt mochaTest
+  post:
+    - grunt uglify

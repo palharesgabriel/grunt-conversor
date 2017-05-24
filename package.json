@@ -1,0 +1,29 @@
+{
+  "name": "conversor",
+  "version": "0.0.1",
+  "description": "Prova de conceito Mocha/Grunt",
+  "main": "conversor.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "Gabriel Palhares",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.15.2",
+    "mocha": "^3.4.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-circleci": "^0.1.3",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-mocha-test": "^0.13.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palharesgabriel/grunt-conversor.git"
+  }
+}
