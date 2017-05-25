@@ -8,12 +8,12 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     
-    //Hook no Github
+    //Hook no Gitlab
     circleci: {
-      token:    '7f79bd9aafcd0c1a85bcbd97a5c44059e1a3e432',
+      token:    'oMv5x2ffk4yzyE16Ucsy',
       username: 'palharesgabriel',
-      project:  'conversor',
-      commit:   'TheHashOfTheCommit'
+      project:  'grunt-conversor',
+      commit:   'Mensagem aleatória'
   },
     
     //Minificação do código
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
   }
 },
     
-    // Configura uma tarefa de teste mocha
+    // Configura uma tarefa de teste unitário Mocha
     mochaTest: {
       test: {
         options: {
