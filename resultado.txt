@@ -4,8 +4,28 @@
 [0m    Conversão RGB para Hexa[0m
     [32m  √[0m[90m converte as cores básicas[0m
 [0m    Conversão Hexa para RGB[0m
-    [32m  √[0m[90m converte as cores básicas[0m
+    [31m  1) converte as cores básicas[0m
 
 
-[92m [0m[32m 2 passing[0m[90m (13ms)[0m
+[92m [0m[32m 1 passing[0m[90m (17ms)[0m
+[31m  1 failing[0m
+
+[0m  1) Conversor do código de cores Conversão Hexa para RGB converte as cores básicas:
+
+      [31mAssertionError: expected [ 15, 0, 0 ] to deeply equal [ 255, 0, 0 ][0m
+      [32m+ expected[0m [31m- actual[0m
+
+       [
+      [31m-  15[0m
+      [32m+  255[0m
+         0
+         0
+       ]
+      [0m[90m
+    at Assertion.assertEqual (node_modules\chai\lib\chai\core\assertions.js:485:19)
+    at Assertion.ctx.(anonymous function) [as equal] (node_modules\chai\lib\chai\utils\addMethod.js:41:25)
+    at Context.<anonymous> (test\testConversor.js:23:27)
+  
+[0m
+
 

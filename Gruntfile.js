@@ -4,16 +4,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-circleci');
+  grunt.loadNpmTasks('grunt-githooks');
 
   grunt.initConfig({
     
-    //Hook no Gitlab
-    circleci: {
-      token:    'oMv5x2ffk4yzyE16Ucsy',
-      username: 'palharesgabriel',
-      project:  'grunt-conversor',
-      commit:   'Mensagem aleatória'
+    githooks: {
+    all: {
+      // Executa o teste em cada commit
+      'pre-commit': 'mochaTest',
+    }
   },
     
     //Minificação do código
@@ -54,6 +53,6 @@ module.exports = function(grunt) {
     }
   });
  
-  grunt.registerTask('default', ['mochaTest', 'jshint', 'uglify', 'circleci']);
+  grunt.registerTask('default', ['mochaTest', 'jshint', 'uglify']);
  
 };
